@@ -1,0 +1,12 @@
+<h1>
+    Recomendaciones:
+</h1>
+
+<ul class="list-group">
+    
+    <app-post *ngFor="let mensaje of mensajes | async" 
+    [mensaje]="mensaje"
+    (clickPost)="escucharClick($event)">
+            
+    </app-post>
+</ul>
